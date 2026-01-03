@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+/* ------------------ */
+/* RESET + GLOBAL     */
+/* ------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Utility container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ------------------ */
+/* HEADER + NAV       */
+/* ------------------ */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.main-nav {
+  margin-top: 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #0070f3;
+}
+
+/* ------------------ */
+/* HERO SECTION       */
+/* ------------------ */
+.hero {
+  background: linear-gradient(135deg, #0070f3 0%, #00c9a7 100%);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ------------------ */
+/* SECTIONS           */
+/* ------------------ */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  color: #444;
+}
+
+/* ------------------ */
+/* SKILLS             */
+/* ------------------ */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills-list li {
+  background: #e7f3ff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ------------------ */
+/* FEATURED CARDS     */
+/* ------------------ */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.featured-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+
+  /* FIX */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.featured-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.featured-item h3 {
+  margin: 15px 15px 5px 15px;
+  font-size: 1.2rem;
+}
+
+.featured-item p {
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0 15px 10px 15px;
+}
+
+/* ------------------ */
+/* BUTTONS            */
+/* ------------------ */
+.btn {
+  display: inline-block;
+  margin: auto 0 20px 0; /* PUSHES BUTTON TO BOTTOM */
+  align-self: center;
+
+  padding: 10px 22px;
+  background: #0070f3;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+/* ------------------ */
+/* FOOTER             */
+/* ------------------ */
+.site-footer {
+  background: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #00c9a7;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ */
+/* RESPONSIVE         */
+/* ------------------ */
+@media (max-width: 700px) {
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-item img {
+    height: 150px;
+  }
+}

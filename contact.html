@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Alwaleed Abugalib</title>
+  <link href="styles/contact.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <h1>Alwaleed Abugalib</h1>
+      <p class="tagline">UX/UI • Visual Web • Graphic Design</p>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="ux-ui.html">UX/UI</a>
+        <a href="visual-web.html">Visual Web</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Let’s connect — I’m open to collaborations, design projects, and creative discussions.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CARD -->
+  <section class="section container">
+    <div class="contact-card">
+      <form class="contact-form" action="https://formspree.io/f/mqkvkgka" method="POST">
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>📧 <a href="mailto:waleedabugalib@gmail.com">waleedabugalib@gmail.com</a></p>
+      <p>© 2025 Alwaleed Abugalib</p>
+    </div>
+  </footer>
+
+</body>
+</html>
